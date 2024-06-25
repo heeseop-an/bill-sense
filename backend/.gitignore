@@ -1,0 +1,17 @@
+# Virtual environment
+venv/
+env/
+*.venv
+*.virtualenv
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Other common files to ignore
+*.log
+*.sqlite3
