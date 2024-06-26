@@ -8,6 +8,7 @@ from app.utils.gemini import analyze_invoice
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+
 def main():
     if len(sys.argv) < 2:
         script_dir = os.path.dirname(os.path.abspath(__file__))
