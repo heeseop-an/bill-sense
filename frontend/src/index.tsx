@@ -5,10 +5,12 @@ import "@mantine/core/styles.css";
 import { createTheme, MantineProvider } from "@mantine/core";
 
 const theme = createTheme({
-  // put custom theme to overrides
+  /** Put your mantine theme override here */
 });
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(
+  document.getElementById("root") as HTMLElement
+);
 root.render(
   <MantineProvider theme={theme}>
     <React.StrictMode>

@@ -3,7 +3,7 @@ import { Button } from "@mantine/core";
 function App() {
   return (
     <div className="App">
-      <Button variant="filled">Button</Button>
+      <Button>button</Button>
     </div>
   );
 }
