@@ -20,7 +20,6 @@ def analyze_invoice(image_path):
     - Quantities
     - Unit prices
     - Total price for each item
-    - Overall total
 
     Format the output as a JSON object.
     """

@@ -1,11 +1,9 @@
-import React from 'react';
-
 function App() {
     return (
-        <div className="App">
-            bill sense
-        </div>
-    );
+        <>
+            Bill Sense
+        </>
+    )
 }
 
-export default App;
+export default App
