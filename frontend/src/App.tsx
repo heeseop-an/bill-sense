@@ -1,11 +1,13 @@
-import { Button } from "@mantine/core";
+import "@mantine/core/styles.css";
+import "@mantine/dropzone/styles.css";
+import { MantineProvider } from "@mantine/core";
+import { Router } from "./Router";
+import { theme } from "./theme";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <Button>button</Button>
-    </div>
+    <MantineProvider theme={theme}>
+      <Router />
+    </MantineProvider>
   );
 }
-
-export default App;
