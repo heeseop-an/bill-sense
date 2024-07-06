@@ -9,7 +9,7 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 
 def analyze_invoice(image_path):
-    model = genai.GenerativeModel('gemini-pro-vision')
+    model = genai.GenerativeModel("gemini-pro-vision")
 
     image = Image.open(image_path)
 

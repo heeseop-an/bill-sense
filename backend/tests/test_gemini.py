@@ -4,7 +4,7 @@ import sys
 import os
 import json
 
-from app.utils.gemini import analyze_invoice
+from backend.app.gemini import analyze_invoice
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -12,7 +12,9 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 def main():
     if len(sys.argv) < 2:
         script_dir = os.path.dirname(os.path.abspath(__file__))
-        sample_invoice_path = os.path.join(script_dir, '..', 'test_data', 'sample_invoice2.jpg')
+        sample_invoice_path = os.path.join(
+            script_dir, "..", "test_data", "sample_invoice2.jpg"
+        )
         if not os.path.exists(sample_invoice_path):
             print(f"Sample invoice not found at {sample_invoice_path}")
             print("Usage: python -m tests.test_invoice [path_to_invoice_image]")
